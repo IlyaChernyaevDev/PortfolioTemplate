@@ -11,7 +11,7 @@
     &__divider {
         width: 2px;
         height: 70px;
-        background-color: #fff;
+        background-color: $main-color;
     }
     &__text {
         height: 150px;
@@ -20,11 +20,18 @@
         font-weight: bold;
         font-size: 16px;
         line-height: 24px;
-        color: #FFFFFF;
+        color: $main-color;
         span {
             display: block;
             transform: rotate(-90deg) translate(-35%, -260%);
             width: 150px;
+        }
+    }
+    &__link {
+        svg {
+            path {
+                fill: $main-color;
+            }
         }
     }
 }
