@@ -1,0 +1,97 @@
+.skills {
+    padding-top: 120px;
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: -30%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__tech {
+        margin-top: 60px;
+        padding: 0 10px 0 10px;
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+        grid-auto-rows: 1fr;
+        gap: 13px;
+    }
+    &__item {
+        border: 1px solid #000000;
+        padding: 30px 30px 25px 30px;
+        &-title {
+            margin-top: 20px;
+        }
+        &-descr {
+            margin-top: 15px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            margin-bottom: 0;
+            color: #000000;
+        }
+        &-icon {
+            &_jquery {
+                margin-top: 15px;
+                margin-bottom: 34px;
+            }
+            &_mongo {
+                margin-top: 8px;
+                margin-bottom: 32px;
+            }
+        }
+    }
+    &__progress {
+        margin-top: 120px;
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+        grid-auto-rows: 1fr;
+        gap: 38px 46px;
+    }
+    &__block {
+        &-head {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &-title {
+            position: relative;
+            margin-bottom: 0;
+            padding-left: 12px;
+            @include before_circle;
+            &:before {
+                top: -35%;
+            }
+        }
+        &-percent {
+            text-align: right;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+        }
+        &-progress {
+            &-bar {
+                margin-top: 27px;
+                &-back {
+                    max-width: 350px;
+                    width: 100%;
+                    height: 14px;
+                    background: #E8E4DE;
+                    border-radius: 4px;
+                }
+                &-front {
+                    height: 14px;
+                    background: $main-color;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
