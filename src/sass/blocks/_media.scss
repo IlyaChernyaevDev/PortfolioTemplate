@@ -8,6 +8,20 @@
     .container {
         max-width: 960px;
     }
+    .about-me {
+        &__container {
+            grid-template-columns: 400px 508px;
+            column-gap: 40px;
+        }
+        &__skills {
+            gap: 5px 20px;
+            grid-template: repeat(2, minmax(115px, auto))/repeat(2, 245px);
+            &-item {
+                grid-template-columns: 40px 195px;
+                column-gap: 15px;
+            }
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -19,11 +33,24 @@
             width: 70%;
         }
     }
+    .about-me {
+        &__container {
+            grid-template-columns: 300px 380px;
+        }
+        &__skills {
+            grid-template-columns: 380px;
+            grid-auto-rows: minmax(115px, auto);
+            &-item {
+                grid-template-columns: 40px 320px;
+                column-gap: 20px;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
     .container {
-        max-width: 570px;
+        max-width: 540px;
     }
     .title {
         &_fz48 {
@@ -34,6 +61,19 @@
         &__title {
             line-height: 39px;
             width: 300px;
+        }
+    }
+    .about-me {
+        padding-top: 40px;
+        &__container {
+            grid-template: 400px auto auto / 1fr;
+        }
+        &__skills {
+            grid-template-columns: repeat(2, 260px);
+            &-item {
+                grid-template-columns: 40px 200px;
+                column-gap: 20px
+            }
         }
     }
 }
@@ -58,8 +98,22 @@
         }
     }
     .promo {
+        &__subtitle {
+            font-size: 16px;
+        }
         &__btns {
             margin-top: 30px;
+        }
+    }
+    .about-me {
+        &__subtitle {
+            font-size: 24px;
+        }
+        &__container {
+            grid-template: 340px auto auto / 1fr;
+        }
+        &__skills {
+            grid-template-columns: 1fr;
         }
     }
 
