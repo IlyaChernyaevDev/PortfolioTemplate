@@ -78,6 +78,18 @@
             grid-template: repeat(2,1fr)/repeat(2,1fr);
         }
     }
+    .price {
+        &__wrapper {
+            gap: 90px;
+        }
+        &__list {
+            grid-template-columns: 250px;
+            grid-template-rows: repeat(3, 1fr);
+        }
+        &__item {
+            grid-template: repeat(2, auto) / repeat(2, auto);
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -128,6 +140,19 @@
     }
     .portfolio {
         padding-top: 40px;
+    }
+    .price {
+        &__wrapper {
+            padding-top: 40px;
+            grid-template: repeat(2, 1fr) / 1fr;
+            row-gap: 25px;
+            grid-auto-rows: 1fr;
+        }
+        &__list {
+            grid-template-columns: 350px;
+            margin: 0 auto;
+            row-gap: 25px;
+        }
     }
 }
 
@@ -194,6 +219,17 @@
             &-head {
                 grid-template-columns: repeat(2,auto);
             }
+        }
+    }
+    .price {
+        &__wrapper {
+            margin: 20px auto 0 auto;
+            row-gap: 20px;
+            padding-top: 0;
+        }
+        &__list {
+            grid-template-columns: 230px;
+            row-gap: 20px;
         }
     }
 }
