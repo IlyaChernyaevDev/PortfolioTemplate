@@ -1,4 +1,4 @@
-# Portfolio Template(HTML/CSS)
+# Portfolio Template(HTML/SCSS)
 Website template for portfolio.
 
 ## Requirements: 
